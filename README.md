@@ -17,7 +17,17 @@ The purpose of this analysis was to use machine learning and neural networks to 
 
 # Compiling, Training, and Evaluating the Model
 
-I have selected 80 neurons for my first hidden_layer1 and 30 neurons for my second hidden_layer2. The number of neurons in my hidden layers (80 and 30) controls the capacity of the model. I have chosen it because it is a reasonable starting point for experimentation. If I added more neurons, the model can learn faster, but it might also be prone to overfitting. I have chosen the ReLU and Sigmoid activation functions in hidden and output layers because it helps models train faster.
+I have selected 80 neurons for my first hidden_layer1 and 30 neurons for my second hidden_layer2.
+The number of neurons in my hidden layers (80 and 30) controls the capacity of the model.
+I have chosen it because it is a reasonable starting point for experimentation. If I added more neurons, the model can learn faster, but it might also be prone to overfitting. I have chosen the ReLU and Sigmoid activation functions in hidden and output layers because it allows the model to learn faster non-linear patterns in the data. The output layer uses a sigmoid activation function, which is great for binary classification as it outputs a probability score between 0 and 1.
 
-I Achieved a model Performance of about 75%. I did so by adding a third_hidden_layer of 10 neurons to see if the model accuracy
-improved. For some reason, the model accuraccy did not increase much.
+# Model Performance:
+
+loss: 0.5589
+Accuracy: 0.7233
+
+I Achieved a model Performance of 73%, which is less than the required 75% target. It tried to increase the models performance by adding a third_hidden_layer of 10 neurons to see if the model accuracy improved. After trying several times, the model's accuraccy did not increase, so I dceided to leave it at the 73% target.
+
+# Summary
+
+The deep learning model achieved an accuracy of 73%, a solid performance but slightly below the target. To improve, we could consider using advanced models like Random Forest or XGBoost, which are effective for classification tasks with structured data. Alternatively, we could continue optimizing the current model by fine-tuning hyperparameters. With further refinement, this model could reach the 75% accuracy target and enhance the Alphabet Soup nonprofit foundation's ability to predict successful funding applicants.
